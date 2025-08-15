@@ -115,9 +115,15 @@ footer {
   text-align: center;
 }
 
+.con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box {
   width: 300px;
-  height: 280px;
+  height: 250px;
   border: 2px solid white;
   border-radius: 5px;
   margin: 10px;
