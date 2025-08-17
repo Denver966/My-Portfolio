@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scrollbar-color: rgb(63, 9, 114) #000021;
 }
 
 * {
@@ -116,7 +117,7 @@ footer {
   text-align: center;
 }
 
-.con{
+.con {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +125,12 @@ footer {
 
 .box {
   width: auto;
-  height: 250px;
+  height: 200px;
   border: 2px solid white;
   border-radius: 5px;
   margin: 10px;
 }
-.box1{
+.box1 {
   width: 300px;
   height: 250px;
   border: 2px solid white;
@@ -137,18 +138,18 @@ footer {
   margin: 10px;
   padding: 15px;
 }
-.box_2{
+.box_2 {
   width: 300px;
   height: 320px;
   border: 2px solid white;
   border-radius: 5px;
   margin: 10px;
 }
-.projec{
+.projec {
   padding: 10px;
 }
 
-.displayflex{
+.displayflex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -239,10 +240,13 @@ footer {
   height: 50px;
   margin-top: 10px;
   padding: 0 10px;
-  border: 2px solid black;
   border-radius: 5px;
   font-size: 15px;
   margin-left: 10px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
 }
 .form #name {
   margin-left: 10px;
@@ -254,17 +258,20 @@ footer {
   margin: 10px;
   padding: 10px;
   height: 200px;
-  border: 2px solid black;
   border-radius: 5px;
   font-size: 15px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
 }
 
 .form #submit {
   padding: 8px 18px;
   margin-left: 10px;
   border-radius: 5px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: #06ad06;
+  border: 2px solid rgb(255 255 255);
+  background-color: transparent;
   color: white;
   font-size: 17px;
   font-weight: 700;
@@ -272,8 +279,16 @@ footer {
   transition: all 0.7s;
 }
 .form #submit:hover {
-  background-color: rgb(10, 199, 10);
+  background-color: rgb(4, 140, 4);
 }
+
+input::placeholder {
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+}
+
 
 .form {
   display: flex;
@@ -410,7 +425,7 @@ footer {
   .img {
     display: none;
   }
-  .image{
+  .image {
     margin-top: 0;
   }
   .height p {
@@ -437,58 +452,66 @@ footer {
     margin: 15px 0;
   }
 
-  .form{
+  .form {
     align-items: center;
     margin-bottom: 50px;
   }
 
-  .contact{
+  .contact {
     height: auto;
   }
   .form #submit {
     margin-bottom: 10px;
   }
 
-  .form #message{
+  .form #message {
     width: 92%;
   }
 
-  .widht{
+  .widht {
     font-size: 30px;
   }
 
-  .navbar{
+  .navbar {
     width: auto;
   }
-  
-  .firstSection{
+
+  .firstSection {
     overflow-x: hidden;
   }
 }
 
-@media screen and (max-width:600px) {
-  .boxes{
+@media screen and (max-width: 600px) {
+  .boxes {
     flex-direction: column;
   }
-    .rightsection img {
+  .rightsection img {
     display: none;
   }
-   .img {
+  .img {
     display: none;
   }
-    .image{
+  .image {
     width: 280px;
     margin-left: 10px;
   }
-    .formm{
+  .formm {
     width: 300px;
     margin: auto;
   }
-  .form{
+  .form {
     flex-direction: column;
   }
 
-   .form #message{
+  .form #message {
     width: 89%;
+  }
+
+  .widht {
+    font-size: 27px;
+  }
+
+  .right ul {
+    width: 60%;
   }
 }
